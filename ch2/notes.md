@@ -19,3 +19,9 @@ Setting up environment for development
   - Mac switched from GCC to Clang
   - Debugging
     - for Mac it's `lldb`
+    - for Linux it's `gdb`
+
+
+Tips
+-----
+  - `man 3 <function>` prints the C Library Functions version of the `man` page
