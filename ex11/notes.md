@@ -1,0 +1,2 @@
+  - you can initialize an array with braces in modern C.
+    - didn't used to be able to do this
