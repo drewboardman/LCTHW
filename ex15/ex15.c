@@ -3,7 +3,14 @@
 int main(int argc, char *argv[])
 {
   int ages[] = { 15, 31, 29, 65 };
-  char *names[] = { "Drew", "Alex", "Gail", "Geoff" };
+  char *drew = "Drew";
+  char *alex = "Alex";
+  char *gail = "Gail";
+  char *geoff = "Geoff";
+  char *names[] = { drew, alex, gail, geoff };
+  printf("the value of drew is: %s\n", drew);
+  printf("the address of drew is: %p\n", &drew);
+  /* char *names[] = { "Drew", "Alex", "Gail", "Geoff" }; */
 
   printf("--Part 1--\n");
   // safely get the # of items in ages
@@ -34,10 +41,15 @@ int main(int argc, char *argv[])
 
   for(i=0; i<size_of_ages; i++)
   {
-    char *name_index = names[i + 15];
+    char *name_index = names[i];
     int age_index = ages[i];
     printf("%s is %d years old, again\n", name_index, age_index);
   }
   printf("--Part 4--\n");
+
+  for(i=0; i<size_of_ages; i++) {
+    printf("the value of name is: %s\n", names[i]);
+    printf("the address of name is %p\n", &names[i]);
+  }
   return 0;
 }
