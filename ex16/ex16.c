@@ -49,5 +49,15 @@ int main(int argc, char *argv[]) {
   printf("Frank is at the memory location %p: \n", frank);
   printf("Frank the struct is: \n");
   Person_print(frank);
+
+  // Now do stuff with references
+  joe->age = 20;
+  joe->height -= 15;
+  joe->weight += 5;
+  Person_print(joe);
+
+  frank->age -= 1;
+  frank->weight += 15;
+  Person_print(frank);
   return 0;
 };
