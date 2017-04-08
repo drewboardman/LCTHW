@@ -59,5 +59,8 @@ int main(int argc, char *argv[]) {
   frank->age -= 1;
   frank->weight += 15;
   Person_print(frank);
+
+  Person_destroy(joe);
+  /* Person_destroy(frank); */
   return 0;
 };
