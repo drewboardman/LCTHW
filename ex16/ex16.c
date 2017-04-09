@@ -44,6 +44,7 @@ int main(int argc, char *argv[]) {
   printf("Joe is at the memory location %p: \n", joe);
   printf("Joe the struct is: \n");
   Person_print(joe);
+  Person_print(NULL);
 
   struct Person *frank = Person_create("Frankie Beans", 20, 72, 180);
   printf("Frank is at the memory location %p: \n", frank);
