@@ -62,6 +62,6 @@ int main(int argc, char *argv[]) {
   Person_print(frank);
 
   Person_destroy(joe);
-  /* Person_destroy(frank); */
+  Person_destroy(frank);
   return 0;
 };
