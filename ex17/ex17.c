@@ -26,4 +26,18 @@ struct Connection {
   struct Database *db;
 };
 
+void die(const char *message) {
+};
+
+void Address_print(struct Address *addr) {
+  printf("%d %s %s", addr->id, addr->name, addr->email);
+};
+
+void Database_load(struct Connection *conn) {
+  int rc = fread(conn->db, sizeof(struct Database), 1, conn->file);
+  if(rc != 1) {
+    die("Failed to load database!");
+  };
+};
+
 int main(int argc, char *argv[]){};
